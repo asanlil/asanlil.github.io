@@ -1,119 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-:root{
-    --dark-blue: #145DA0;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 body{
-    background-color: rgb(46,139,192);
-    background-image: linear-gradient(225deg, rgba(46,139,192,1) 0%, rgba(20,93,160,1) 100%);
-    height: 100vh;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f5f3f4;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    background-color: #161a1d; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
-.container{
-    background: #fff;
-    border-radius: 40px;
-    height: 700px;
-    width: 310px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.heading{
-    color: var(--dark-blue);
-    font-size: 120px;
-}
-
-.btn-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-    height: 100;
-}
-
-/* !FIXXXX BTN SO THAT THE REST CAN FIT IN */
-.btn{
-    background-color: var(--dark-blue);
-    color: white;
-    outline: none;
-    border: none;
-    padding: 0.8em 2em;
-    border-radius: 25px;
-    margin: 1em 0;
-}
-
-.login-btn{
+.name-heading{
+    margin: 0px;
+    color: #BA181B;
+    font-size: 6em;
     cursor: pointer;
+    transition: 0.1s ease;
+}
+.name-heading:hover{
+    text-shadow: 0px 8px 8px #bd2217;
+    transform: translateY(-0.14em);
 }
 
-.field::placeholder{
+.picture{
+    background-color: #161a1d; 
+    height: 810px;
+    opacity: 30%;
+}
+
+
+nav{
+    width: 100%;
+    background-color: #BA181B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+}
+
+ul{
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    width: 600px;
+}
+
+a{
     color: white;
-}
-
-.field:focus::placeholder{
-    color: transparent;
-}
-
-.footer-container{
-    margin-top: 90px;
-}
-
-.footer{
-    padding: 40px 0;
-    color: var(--dark-blue);
-}
-
-.footer span{
-    text-decoration: underline;
-}
-
-.footer span:hover{
-    color: #0a2b4b;
-    cursor: pointer;
-}
-
-/* DESKTOP */
-@media (min-width:460px){
-    .container{
-        width: 700px;
-        height: 680px;
-    }
-
-    .btn{
-        width: 100%;
-    }
-    .btn-container{
-        width: 400px;
-    }
-
-    .footer{
-        margin-top: -40px;
-        font-size: 26px;
-    }
-
-    .field::placeholder{
-        font-size: 20px;
-    }
-
-    .btn{
-        font-size: 20px;
-    }
-
-    .heading{
-        margin-top: 40px;
-    }
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 100;
 }
