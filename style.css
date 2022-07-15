@@ -29,7 +29,7 @@ body{
 .name-heading{
     margin: 0px;
     color: #BA181B;
-    font-size: 6em;
+    font-size: 4em;
     cursor: pointer;
     transition: 0.1s ease;
 }
@@ -71,4 +71,35 @@ a{
     text-decoration: none;
     font-size: 1.4em;
     font-weight: 100;
+}
+
+/* ABOUT SECTION */
+.about-section{
+    height: 850px;
+    width: 100%;
+    background-color: #161a1d; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section h2{
+    margin: 0;
+    color: #BA181B;
+    font-size: 5em;
+}
+
+.about-section p{
+    /* padding: 0px 20px; */
+    width: 60%;
+    text-align: center;
+    color: #f5f3f4;
+}
+
+/* CONTACT SECTION */
+.contact-section{
+    height: 850px;
+    width: 100%;
+    background-color: #0081e4; 
 }
